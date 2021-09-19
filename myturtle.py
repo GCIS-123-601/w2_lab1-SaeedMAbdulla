@@ -8,7 +8,17 @@ def my_turtle():
     turtle.down()
     turtle.home()
     turtle.circle(25)
+def turtle_state():
+    v2=turtle.isdown()
+    v3=turtle.heading()
+    vx=turtle.xcor()
+    vy=turtle.ycor()
+    print("turtle is down?", v2)
+    print("current angle: ", v3)
+    print("xcor: ", vx, "ycor: ", vy)
+
 def main():
     my_turtle()
+    turtle_state()
     input("press key to continue.. ")
 main()    
